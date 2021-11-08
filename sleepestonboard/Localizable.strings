@@ -1,3 +1,6 @@
 /****************************************************************************/
 /* Localization file */
 
+"OpenSubscriptionButton" = "Open Subscription Screen";
+"OpenSubscription_accessibility" = "Opens Sleepest subscription page to purchase a subscription service";
+

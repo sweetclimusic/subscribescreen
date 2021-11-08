@@ -5,9 +5,8 @@
 //  Created by ashlee.muscroft on 08/11/2021.
 //
 //
+import AsyncDisplayKit
 
-import UIKit
-
-class SubscriptionViewController: ASCollectionNode {
+class SubscriptionViewController: ASDKViewController<ASDisplayNode> {
 
 }

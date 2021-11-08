@@ -5,15 +5,46 @@
 //  Created by ashlee.muscroft on 05/11/2021.
 //
 
-import UIKit
+import AsyncDisplayKit
 
-class ViewController: UIViewController {
+class ViewController: ASDKViewController<ASDisplayNode> {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    var mainLayoutNode: ASDisplayNode!
+    var asButtonNodeSubscribe = ASButtonNode()
+    
+    override init() {
+        super.init(node: ASDisplayNode())
+        mainLayoutNode = ASDisplayNode()
+        node.addSubnode(mainLayoutNode)
+        buttonSetup()
+        node.addSubnode(asButtonNodeSubscribe)
+        // center main Button
+        node.layoutSpecBlock = { [self] (_,_) in
+            return ASCenterLayoutSpec(centeringOptions: .XY, sizingOptions: .minimumXY, child: self.asButtonNodeSubscribe)
+        }
     }
-
-
+    
+    required init?(coder: NSCoder) {
+        fatalError("coder not implemented")
+    }
+    
+    private func buttonSetup() {
+        asButtonNodeSubscribe.setTitle( NSLocalizedString("OpenSubscriptionButton", comment: ""),
+                                        with: nil,
+                                        with: .blue,
+                                        for: .normal)
+        asButtonNodeSubscribe.addTarget(
+            self,
+            action: #selector(OpenSubscriptionScreen),
+            forControlEvents: .touchUpInside
+        )
+        asButtonNodeSubscribe.accessibilityLabel = NSLocalizedString("OpenSubscription_accessibility", comment: "")
+    }
+    @objc func OpenSubscriptionScreen()
+    {
+        let subscriptionViewController = SubscriptionViewController()
+        show(subscriptionViewController, sender: self)
+    }
+    
 }
 

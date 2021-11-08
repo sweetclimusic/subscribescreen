@@ -5,7 +5,7 @@
 //  Created by ashlee.muscroft on 05/11/2021.
 //
 
-import UIKit
+import AsyncDisplayKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -16,7 +16,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let windoScene = (scene as? UIWindowScene) else { return }
+        window = UIWindow(windowScene: windoScene)
+        window?.windowScene = windoScene
+        let openSubViewController = ViewController()
+        //MARK: Not currently sure how texture works with navigation, creating this like I would UIKit untill I understand more...
+        let navigationController = ASDKNavigationController(rootViewController: openSubViewController)
+        window?.rootViewController = navigationController
+        window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
