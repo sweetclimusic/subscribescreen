@@ -9,13 +9,18 @@
 /* Begin PBXBuildFile section */
 		6DD7E56BD0DAB3865E3F041E /* Pods_sleepestonboard_sleepestonboardUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C44FFAEC1DFDC23F7727B8 /* Pods_sleepestonboard_sleepestonboardUITests.framework */; };
 		8F3450C1C3785213409C5539 /* Pods_sleepestonboardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4930D5FC3CC3820EC67357F /* Pods_sleepestonboardTests.framework */; };
+		9C70601F5E298403B07EAD3A /* UIImage+VisualEffectOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C70619A20B7E2547354FEF4 /* UIImage+VisualEffectOverlay.swift */; };
 		9C7060CF2BDC835629362650 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C7063834E20CB74F1398D37 /* Localizable.strings */; };
-		9C706E0E70E667B4B9AE6819 /* SubscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7069E909E51D15433AAE9E /* SubscriptionViewController.swift */; };
+		9C7063769AE4C90F9457E14F /* LogoNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C70641EEF34A7C88E475B84 /* LogoNode.swift */; };
+		9C7063A50A5199AF422E2871 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C706C82E12EB97D5166DA3D /* Constants.swift */; };
+		9C7066BF1E2C1D422D433B37 /* DismissButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7069B3A999C8768F59A630 /* DismissButtonNode.swift */; };
+		9C7067E1AD3F2AA0DF49A64B /* SubscriptionNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C70669C4258372091B6EF51 /* SubscriptionNode.swift */; };
+		9C70689F1F47D8E65D4F94F5 /* SubscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C706401260EFC67D29BD3BC /* SubscriptionViewController.swift */; };
+		9C706C6CD7EAB63D5A8D868E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C706ADDA95D878881F0D505 /* ViewController.swift */; };
 		CC0F00792739C1D5000D5D7F /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CC0F00782739C1D5000D5D7F /* Podfile */; };
-		CC0F007C2739CCAA000D5D7F /* BaseNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0F007B2739CCAA000D5D7F /* BaseNode.swift */; };
+		CC0F0084273AC4C9000D5D7F /* BackgroundNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0F0083273AC4C9000D5D7F /* BackgroundNode.swift */; };
 		CCCB931B2735988E00D9BCD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCB931A2735988E00D9BCD7 /* AppDelegate.swift */; };
 		CCCB931D2735988E00D9BCD7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCB931C2735988E00D9BCD7 /* SceneDelegate.swift */; };
-		CCCB931F2735988E00D9BCD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCB931E2735988E00D9BCD7 /* ViewController.swift */; };
 		CCCB93242735989300D9BCD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCCB93232735989300D9BCD7 /* Assets.xcassets */; };
 		CCCB93272735989300D9BCD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCCB93252735989300D9BCD7 /* LaunchScreen.storyboard */; };
 		CCCB93322735989300D9BCD7 /* sleepestonboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCB93312735989300D9BCD7 /* sleepestonboardTests.swift */; };
@@ -47,17 +52,21 @@
 		42C44FFAEC1DFDC23F7727B8 /* Pods_sleepestonboard_sleepestonboardUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sleepestonboard_sleepestonboardUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69F679941EE52013D8F611BE /* Pods-sleepestonboard-sleepestonboardUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sleepestonboard-sleepestonboardUITests.debug.xcconfig"; path = "Target Support Files/Pods-sleepestonboard-sleepestonboardUITests/Pods-sleepestonboard-sleepestonboardUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		76CF09094CBE97D5A0BF80BE /* Pods_sleepestonboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sleepestonboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C70619A20B7E2547354FEF4 /* UIImage+VisualEffectOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+VisualEffectOverlay.swift"; sourceTree = "<group>"; };
 		9C7063834E20CB74F1398D37 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		9C7069E909E51D15433AAE9E /* SubscriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionViewController.swift; sourceTree = "<group>"; };
+		9C706401260EFC67D29BD3BC /* SubscriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionViewController.swift; sourceTree = "<group>"; };
+		9C70641EEF34A7C88E475B84 /* LogoNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoNode.swift; sourceTree = "<group>"; };
+		9C70669C4258372091B6EF51 /* SubscriptionNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionNode.swift; sourceTree = "<group>"; };
+		9C7069B3A999C8768F59A630 /* DismissButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissButtonNode.swift; sourceTree = "<group>"; };
+		9C706ADDA95D878881F0D505 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9C706C82E12EB97D5166DA3D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CC0F007327396891000D5D7F /* libTexture.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTexture.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC0F007527396977000D5D7F /* libPINOperation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libPINOperation.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC0F007727396BE9000D5D7F /* Texture-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Texture-Bridging-Header.h"; sourceTree = "<group>"; };
 		CC0F00782739C1D5000D5D7F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
-		CC0F007B2739CCAA000D5D7F /* BaseNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNode.swift; sourceTree = "<group>"; };
+		CC0F0083273AC4C9000D5D7F /* BackgroundNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundNode.swift; sourceTree = "<group>"; };
 		CCCB93172735988E00D9BCD7 /* sleepestonboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sleepestonboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCCB931A2735988E00D9BCD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCCB931C2735988E00D9BCD7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CCCB931E2735988E00D9BCD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CCCB93232735989300D9BCD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCCB93262735989300D9BCD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CCCB93282735989300D9BCD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -125,12 +134,40 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		9C7068248BED8F4D6D979391 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9C706401260EFC67D29BD3BC /* SubscriptionViewController.swift */,
+				9C706ADDA95D878881F0D505 /* ViewController.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9C706E0C9B7F96C9D22C8C27 /* Utlilities */ = {
+			isa = PBXGroup;
+			children = (
+				9C706C82E12EB97D5166DA3D /* Constants.swift */,
+			);
+			path = Utlilities;
+			sourceTree = "<group>";
+		};
 		CC0F007A2739CC59000D5D7F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				CC0F007B2739CCAA000D5D7F /* BaseNode.swift */,
+				9C70619A20B7E2547354FEF4 /* UIImage+VisualEffectOverlay.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		CC0F0082273AC4AB000D5D7F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CC0F0083273AC4C9000D5D7F /* BackgroundNode.swift */,
+				9C70669C4258372091B6EF51 /* SubscriptionNode.swift */,
+				9C7069B3A999C8768F59A630 /* DismissButtonNode.swift */,
+				9C70641EEF34A7C88E475B84 /* LogoNode.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		CCCB930E2735988E00D9BCD7 = {
@@ -158,17 +195,17 @@
 		CCCB93192735988E00D9BCD7 /* sleepestonboard */ = {
 			isa = PBXGroup;
 			children = (
+				CC0F0082273AC4AB000D5D7F /* Views */,
 				CC0F007A2739CC59000D5D7F /* Model */,
 				CC0F00782739C1D5000D5D7F /* Podfile */,
-				CC0F007727396BE9000D5D7F /* Texture-Bridging-Header.h */,
 				CCCB931A2735988E00D9BCD7 /* AppDelegate.swift */,
 				CCCB931C2735988E00D9BCD7 /* SceneDelegate.swift */,
-				CCCB931E2735988E00D9BCD7 /* ViewController.swift */,
 				CCCB93232735989300D9BCD7 /* Assets.xcassets */,
 				CCCB93252735989300D9BCD7 /* LaunchScreen.storyboard */,
 				CCCB93282735989300D9BCD7 /* Info.plist */,
-				9C7069E909E51D15433AAE9E /* SubscriptionViewController.swift */,
 				9C7063834E20CB74F1398D37 /* Localizable.strings */,
+				9C706E0C9B7F96C9D22C8C27 /* Utlilities */,
+				9C7068248BED8F4D6D979391 /* ViewModel */,
 			);
 			path = sleepestonboard;
 			sourceTree = "<group>";
@@ -430,11 +467,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC0F007C2739CCAA000D5D7F /* BaseNode.swift in Sources */,
-				CCCB931F2735988E00D9BCD7 /* ViewController.swift in Sources */,
 				CCCB931B2735988E00D9BCD7 /* AppDelegate.swift in Sources */,
+				CC0F0084273AC4C9000D5D7F /* BackgroundNode.swift in Sources */,
 				CCCB931D2735988E00D9BCD7 /* SceneDelegate.swift in Sources */,
-				9C706E0E70E667B4B9AE6819 /* SubscriptionViewController.swift in Sources */,
+				9C70601F5E298403B07EAD3A /* UIImage+VisualEffectOverlay.swift in Sources */,
+				9C7067E1AD3F2AA0DF49A64B /* SubscriptionNode.swift in Sources */,
+				9C7066BF1E2C1D422D433B37 /* DismissButtonNode.swift in Sources */,
+				9C7063769AE4C90F9457E14F /* LogoNode.swift in Sources */,
+				9C7063A50A5199AF422E2871 /* Constants.swift in Sources */,
+				9C70689F1F47D8E65D4F94F5 /* SubscriptionViewController.swift in Sources */,
+				9C706C6CD7EAB63D5A8D868E /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -22,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let openSubViewController = ViewController()
         //MARK: Not currently sure how texture works with navigation, creating this like I would UIKit untill I understand more...
         let navigationController = ASDKNavigationController(rootViewController: openSubViewController)
-        window?.rootViewController = navigationController
+        window?.rootViewController = openSubViewController
         window?.makeKeyAndVisible()
     }
 

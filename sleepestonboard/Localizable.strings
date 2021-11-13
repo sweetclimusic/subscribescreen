@@ -3,4 +3,5 @@
 
 "OpenSubscriptionButton" = "Open Subscription Screen";
 "OpenSubscription_accessibility" = "Opens Sleepest subscription page to purchase a subscription service";
-
+"CloseSubscription_accessibility" = "Cancel and close subscription page";
+"OpeningStatement" = "Join 29,087 others who joined this week";

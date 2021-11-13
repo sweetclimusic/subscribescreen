@@ -9,6 +9,7 @@ target 'sleepestonboard' do
     
   # Pods for sleepestonboard
     pod 'Texture'
+    pod 'SwiftRichString'
   target 'sleepestonboardTests' do
     inherit! :search_paths
     # Pods for testing

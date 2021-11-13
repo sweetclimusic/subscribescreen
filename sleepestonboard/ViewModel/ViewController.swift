@@ -14,8 +14,6 @@ class ViewController: ASDKViewController<ASDisplayNode> {
     
     override init() {
         super.init(node: ASDisplayNode())
-        mainLayoutNode = ASDisplayNode()
-        node.addSubnode(mainLayoutNode)
         buttonSetup()
         node.addSubnode(asButtonNodeSubscribe)
         // center main Button
@@ -40,6 +38,7 @@ class ViewController: ASDKViewController<ASDisplayNode> {
         )
         asButtonNodeSubscribe.accessibilityLabel = NSLocalizedString("OpenSubscription_accessibility", comment: "")
     }
+
     @objc func OpenSubscriptionScreen()
     {
         let subscriptionViewController = SubscriptionViewController()
