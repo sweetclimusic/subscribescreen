@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import AsyncDisplayKit
 
 struct AppFont {
     enum fontType: String, CaseIterable {
@@ -17,14 +18,12 @@ struct AppFont {
      case semiBold = "Montserrat-SemiBold"
     }
     
-    enum fontSize: Int, CaseIterable {
+    enum fontSize: CGFloat, CaseIterable {
         case body = 28
         case cta = 30
         case title = 53
         case button = 35
     }
-    
-    
 }
 
 let title: UIFont = UIFont(name: "Montserrat-Bold", size: 53)!
@@ -36,4 +35,6 @@ let ctaLabel: UIFont = UIFont(name: "Montserrat-Bold", size: 35)!
 
 extension Notification.Name {
     static let presentedControllerNotification = Notification.Name("PresentedController")
+    //TBD if needed, copied of above
+    static let subscriptionControllerNotification = Notification.Name("SubscriptionController")
 }

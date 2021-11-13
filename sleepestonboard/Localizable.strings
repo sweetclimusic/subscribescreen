@@ -5,3 +5,6 @@
 "OpenSubscription_accessibility" = "Opens Sleepest subscription page to purchase a subscription service";
 "CloseSubscription_accessibility" = "Cancel and close subscription page";
 "OpeningStatement" = "Join 29,087 others who joined this week";
+"SubscribeCTA" = "Try Free & Subscribe";
+"Subscription_accessibility" = "Subscription confirmation redirecting to in-app purchase to confirm a new subscription";
+"CTA Label" = "Try 7 days free, then £28.99/year.Cancel anytime. Switch to monthly";

@@ -11,11 +11,13 @@
 		8F3450C1C3785213409C5539 /* Pods_sleepestonboardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4930D5FC3CC3820EC67357F /* Pods_sleepestonboardTests.framework */; };
 		9C70601F5E298403B07EAD3A /* UIImage+VisualEffectOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C70619A20B7E2547354FEF4 /* UIImage+VisualEffectOverlay.swift */; };
 		9C7060CF2BDC835629362650 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C7063834E20CB74F1398D37 /* Localizable.strings */; };
+		9C7061B8CC0B004A5C3366F9 /* SubscribeButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C706E33501BD718AD5C3B7F /* SubscribeButtonNode.swift */; };
 		9C7063769AE4C90F9457E14F /* LogoNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C70641EEF34A7C88E475B84 /* LogoNode.swift */; };
 		9C7063A50A5199AF422E2871 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C706C82E12EB97D5166DA3D /* Constants.swift */; };
 		9C7066BF1E2C1D422D433B37 /* DismissButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7069B3A999C8768F59A630 /* DismissButtonNode.swift */; };
 		9C7067E1AD3F2AA0DF49A64B /* SubscriptionNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C70669C4258372091B6EF51 /* SubscriptionNode.swift */; };
 		9C70689F1F47D8E65D4F94F5 /* SubscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C706401260EFC67D29BD3BC /* SubscriptionViewController.swift */; };
+		9C7069C0E5ECE24948DB9E2F /* FeatureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C706485EC46A1F4820C4F21 /* FeatureViewModel.swift */; };
 		9C706C6CD7EAB63D5A8D868E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C706ADDA95D878881F0D505 /* ViewController.swift */; };
 		CC0F00792739C1D5000D5D7F /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CC0F00782739C1D5000D5D7F /* Podfile */; };
 		CC0F0084273AC4C9000D5D7F /* BackgroundNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0F0083273AC4C9000D5D7F /* BackgroundNode.swift */; };
@@ -56,10 +58,12 @@
 		9C7063834E20CB74F1398D37 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		9C706401260EFC67D29BD3BC /* SubscriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionViewController.swift; sourceTree = "<group>"; };
 		9C70641EEF34A7C88E475B84 /* LogoNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoNode.swift; sourceTree = "<group>"; };
+		9C706485EC46A1F4820C4F21 /* FeatureViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureViewModel.swift; sourceTree = "<group>"; };
 		9C70669C4258372091B6EF51 /* SubscriptionNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionNode.swift; sourceTree = "<group>"; };
 		9C7069B3A999C8768F59A630 /* DismissButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissButtonNode.swift; sourceTree = "<group>"; };
 		9C706ADDA95D878881F0D505 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9C706C82E12EB97D5166DA3D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9C706E33501BD718AD5C3B7F /* SubscribeButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscribeButtonNode.swift; sourceTree = "<group>"; };
 		CC0F007327396891000D5D7F /* libTexture.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTexture.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC0F007527396977000D5D7F /* libPINOperation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libPINOperation.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC0F00782739C1D5000D5D7F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
@@ -139,6 +143,7 @@
 			children = (
 				9C706401260EFC67D29BD3BC /* SubscriptionViewController.swift */,
 				9C706ADDA95D878881F0D505 /* ViewController.swift */,
+				9C706485EC46A1F4820C4F21 /* FeatureViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -166,6 +171,7 @@
 				9C70669C4258372091B6EF51 /* SubscriptionNode.swift */,
 				9C7069B3A999C8768F59A630 /* DismissButtonNode.swift */,
 				9C70641EEF34A7C88E475B84 /* LogoNode.swift */,
+				9C706E33501BD718AD5C3B7F /* SubscribeButtonNode.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -477,6 +483,8 @@
 				9C7063A50A5199AF422E2871 /* Constants.swift in Sources */,
 				9C70689F1F47D8E65D4F94F5 /* SubscriptionViewController.swift in Sources */,
 				9C706C6CD7EAB63D5A8D868E /* ViewController.swift in Sources */,
+				9C7061B8CC0B004A5C3366F9 /* SubscribeButtonNode.swift in Sources */,
+				9C7069C0E5ECE24948DB9E2F /* FeatureViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
